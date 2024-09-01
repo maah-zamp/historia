@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+  
+<link rel="stylesheet" type="text/css" href="style.css">
+  
+<!-- FONTE TEXTO !-->  
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Indie+Flower&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+<!--FONTE RODAPE!-->  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&family=Matemasie&display=swap" rel="stylesheet">
+  
+<!--FONTE BOTAO!-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Indie+Flower&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+  
+<!--PRIMEIRA TELA DE CARREGAMENTO!-->
+<div class="passo ativo" id="passo-0">
+<img src="logo.png" alt="LOGO NORMAL">
+<p>Mariana Zampierim, uma detetive renomada, conhecida por sua astúcia e determinação implacável, caminhava pelas ruas sombrias de uma cidade envolta em mistério. Sua reputação como uma investigadora destemida a precedia, e agora, mais uma vez, ela estava diante de um caso que exigia todo o seu talento. Uma jovem chamada Anabeth, filha de um influente empresário, havia sido sequestrada, e todas as pistas apontavam para um homem perigoso: Vittorio De Luca, o implacável chefe da máfia local.
+
+Mariana havia passado os últimos dias mergulhada nos detalhes do caso, coletando informações de fontes confiáveis e montando um quadro complexo do crime. Vittorio era astuto e cruel, e seu império criminoso se estendia por todos os cantos da cidade, com aliados e espiões em cada esquina. Mariana sabia que o tempo estava contra ela; cada minuto que Anabeth permanecia nas mãos da máfia aumentava o risco de um desfecho trágico.
+
+Após dias de investigação intensa, Mariana finalmente encontrou duas pistas cruciais que poderiam levá-la a Anabeth:
+
+Seguir uma pista sobre um armazém abandonado na periferia da cidade onde Mariana descobriu que um dos capangas de Vittorio havia sido visto perto de um armazém abandonado. A informação sugeria que Anabeth poderia estar sendo mantida lá, mas o local era conhecido por estar fortemente guardado. A escolha de ir até lá significava um confronto direto com os homens de Vittorio, colocando Mariana em grande perigo, mas com a chance de salvar Anabeth rapidamente.
+  
+Infiltrar-se em um clube noturno de luxo no centro da cidade: Mariana recebeu uma dica de uma fonte anônima de que Vittorio estaria no clube naquela noite, discutindo a "entrega" de Anabeth a um comprador estrangeiro. Infiltrar-se no clube poderia permitir que Mariana obtivesse informações cruciais sobre o paradeiro exato de Anabeth, mas o risco era alto, pois o clube estava cheio de mafiosos, e qualquer erro poderia custar a sua vida. </p>
+  
+  <button class="proximo" data-proximo= "1"> Seguir uma pista sobre um armazém abandonado na periferia da cidade </button>
+  
+  <button class="proximo" data-proximo= "2"> Infiltrar-se em um clube noturno de luxo no centro da cidade </button>
+  </div>
+  
+  
+<!--BOTAO ESCOLHA UM!-->
+<div class="passo" id="passo-1">
+<img src="logo.png" alt="LOGO NORMAL">
+<p>Decidindo que a melhor chance de encontrar Anabeth estava em obter informações diretas de Vittorio, Mariana Zampierim se preparou para se infiltrar no clube noturno de luxo. O "La Notte", como era chamado, era um dos estabelecimentos mais exclusivos da cidade, frequentado pela elite e pelos criminosos mais influentes. Mariana sabia que entrar ali exigiria mais do que apenas sua habilidade como detetive; ela precisaria de astúcia, disfarce e uma boa dose de coragem.
+
+Vestindo um elegante vestido preto e disfarçada com uma peruca loira, Mariana assumiu a identidade de uma socialite estrangeira, rica e poderosa. Com seu olhar atento, ela passou pela segurança do clube sem levantar suspeitas, aproveitando sua capacidade de se misturar sem ser notada. Ao entrar no salão principal, foi recebida por uma atmosfera de luxo decadente. Luzes suaves, música envolvente e sussurros conspiratórios preenchiam o ar.
+
+Mariana logo identificou Vittorio De Luca em uma mesa reservada, cercado por seus capangas e outras figuras suspeitas. Ele parecia despreocupado, rindo e brindando com seus companheiros, mas Mariana sabia que por trás daquela fachada havia um homem perigoso e calculista. Ela precisava agir com cautela.
+
+Observando o ambiente, Mariana identificou duas abordagens possíveis para obter as informações que precisava:
+
+Tentar seduzir Vittorio para ganhar sua confiança, Mariana poderia se aproximar diretamente de Vittorio, usando seu disfarce e charme para se infiltrar em seu círculo íntimo. Essa abordagem era arriscada, pois exigiria que ela ganhasse a confiança dele rapidamente, sem revelar sua verdadeira identidade. No entanto, se fosse bem-sucedida, poderia conseguir informações diretas sobre o paradeiro de Anabeth e possivelmente salvar a jovem antes que algo pior acontecesse.
+
+Interrogar discretamente um dos capangas, Outra opção seria focar nos capangas que acompanhavam Vittorio. Mariana poderia seguir um deles até uma área mais isolada do clube e usar sua habilidade de persuasão para extrair informações. Embora menos arriscado do que confrontar Vittorio diretamente, isso poderia atrasar o resgate de Anabeth, e qualquer erro poderia alertar a máfia sobre sua presença. </p>
+  
+  <button class="proximo" data-proximo= "3">Tentar seduzir Vittorio para ganhar sua confiança</button>
+  
+  <button class="proximo" data-proximo= "4"> Interrogar discretamente um dos capangas </button>
+  </div>
+  
+  
+<!--BOTAO ESCOLHA DOIS!-->
+<div class="passo" id="passo-2">
+<img src="logo.png" alt="LOGO NORMAL">
+<p>Decidindo que o armazém abandonado na periferia da cidade poderia ser o esconderijo onde Anabeth estava sendo mantida, Mariana Zampierim preparou-se para a operação. Sabia que o local era conhecido por ser fortemente guardado, e qualquer tentativa de resgate seria perigosa. No entanto, a urgência de salvar a jovem sequestrada superava qualquer receio.
+
+Mariana se equipou com tudo o que poderia precisar: sua arma de serviço, um colete à prova de balas, e um kit de ferramentas para invadir o armazém. Dirigiu até a periferia da cidade, passando por ruas escuras e desertas até que as luzes urbanas começaram a desaparecer no horizonte, dando lugar a terrenos baldios e construções abandonadas.
+
+Quando chegou ao armazém, Mariana estacionou o carro a uma distância segura e o observou de longe. A estrutura velha e deteriorada estava cercada por uma cerca alta de arame farpado. Algumas janelas estavam quebradas, e uma luz fraca piscava dentro do prédio. Ao redor, ela notou dois homens armados patrulhando a entrada, fumando e conversando casualmente.
+
+Mariana precisava agir com cuidado. Sabia que qualquer alarme poderia colocar a vida de Anabeth em risco. Com um plano em mente, ela se esgueirou pela lateral do armazém, contornando a cerca e buscando uma entrada menos vigiada. Encontrou uma janela na parte de trás, alta o suficiente para que os guardas não a notassem, mas baixa o bastante para que ela pudesse alcançá-la com um pequeno salto.
+
+Com habilidade e silêncio, Mariana conseguiu se infiltrar no armazém. Uma vez dentro, ela se escondeu entre caixas e equipamentos antigos, movendo-se lentamente na direção da luz fraca que vinha de uma sala nos fundos. A cada passo, seu coração batia mais rápido, mas sua determinação permanecia inabalável.
+
+Finalmente, Mariana chegou perto da sala. Observando pela fresta da porta entreaberta, ela viu Anabeth, amarrada a uma cadeira, com expressão de medo e cansaço. Havia um terceiro homem na sala, aparentemente esperando instruções dos capangas do lado de fora. Ele olhava para o relógio com frequência, impaciente.
+
+Mariana sabia que tinha que agir rapidamente, mas também sabia que um movimento em falso poderia ser fatal. Ela se posicionou estrategicamente e, em um movimento rápido, abriu a porta e rendeu o homem com sua arma, imobilizando-o antes que ele pudesse reagir.
+
+Anabeth a olhou com olhos cheios de esperança, e Mariana sussurrou: "Eu sou Mariana Zampierim. Estou aqui para te tirar daqui."
+
+Antes que pudesse libertar Anabeth, no entanto, Mariana ouviu os passos dos capangas do lado de fora, se aproximando. Sua presença havia sido detectada, e ela sabia que teria que enfrentar um confronto direto. Rapidamente, ela se posicionou e preparou-se para a chegada dos inimigos.
+
+Nesse momento, Mariana tinha duas escolhas críticas:
+
+Engajar-se em um confronto direto com os capangas, Mariana poderia enfrentar os capangas e tentar neutralizá-los para garantir a segurança de Anabeth. Essa escolha significaria um combate direto, com todos os riscos que isso implicava, mas poderia acabar de vez com a ameaça, garantindo uma rota segura de fuga para ambas.
+
+Tentar escapar furtivamente com Anabeth por uma saída de emergência, Mariana poderia tentar uma abordagem mais cautelosa, usando a confusão inicial para desarmar o homem na sala, libertar Anabeth rapidamente e escapar pelos fundos antes que os capangas conseguissem alcançá-las. Essa escolha envolveria menos confronto direto, mas qualquer erro poderia resultar em uma emboscada e colocá-las em um perigo ainda maior. </p>
+  
+  <button class="proximo" data-proximo= "5">Engajar-se em um confronto direto com os capangas</button>
+  
+  <button class="proximo" data-proximo= "6"> Tentar escapar furtivamente com Elisa por uma saída de emergência </button>
+  </div>
+
+<!-- BOTÃO ESCOLHA 5-->
+<div class="passo" id="passo-5">
+<img src="logo.png" alt="LOGO NORMAL">
+<p> Decidida a enfrentar os capangas e garantir a segurança de Anabeth, Mariana posicionou-se estrategicamente na sala, esperando que os homens se aproximassem. Ela sabia que o confronto seria arriscado, mas era a única maneira de garantir que Anabeth pudesse sair viva daquele lugar.
+
+Quando os capangas entraram na sala, Mariana agiu rapidamente. Ela disparou contra o primeiro homem que cruzou a porta, derrubando-o antes que ele pudesse reagir. O segundo capanga, surpreso, tentou sacar sua arma, mas Mariana foi mais rápida, atingindo-o no ombro e o incapacitando.
+
+Com os dois capangas neutralizados, ela correu para Anabeth, puxando-a para um canto mais seguro da sala. "Fique abaixada e não se mova," ordenou, enquanto se preparava para o próximo confronto.
+
+Mais dois capangas entraram na sala, agora cientes da ameaça. Mariana sabia que estava em desvantagem numérica, mas usou o ambiente a seu favor, escondendo-se atrás de caixas e utilizando a estrutura do armazém como cobertura. Os tiros ricocheteavam pelas paredes, aumentando a tensão no ar.
+
+Em meio ao caos, Mariana conseguiu derrubar outro capanga, mas foi atingida de raspão no braço, sentindo a dor aguda atravessar sua pele. Ignorando a dor, ela continuou lutando, determinada a proteger Mariana a qualquer custo.
+
+Finalmente, o último capanga recuou, percebendo que enfrentava uma oponente formidável. Ele tentou fugir pela porta, mas Mariana o atingiu na perna, impedindo sua fuga. Ela sabia que não havia mais tempo a perder; precisava sair dali com Anabeth antes que mais reforços chegassem.
+
+Mariana se aproximou da jovem, que estava apavorada, mas ilesa. "Vamos sair daqui agora," disse, puxando Anabeth pela mão. Elas saíram da sala, cautelosas, mas com urgência, dirigindo-se para a saída principal do armazém.
+
+No entanto, quando chegaram ao saguão principal, um barulho chamou a atenção de Mariana. Uma porta lateral se abriu, revelando mais capangas se aproximando. Estavam cercadas, e Mariana sabia que a situação era crítica.
+
+Ela precisaria fazer uma escolha rapidamente:
+
+Tentar encontrar uma saída pelo telhado: Mariana poderia tentar subir até o telhado do armazém, onde talvez houvesse uma saída que levasse ao prédio ao lado. Seria uma escalada arriscada, especialmente com Anabeth, mas poderia oferecer uma rota de fuga inesperada e segura.
+
+Usar os explosivos que encontrou no armazém para criar uma distração: Durante a luta, Mariana notou uma caixa de explosivos em um canto do armazém. Ela poderia usá-los para criar uma grande distração ou bloquear a entrada dos capangas, permitindo que ela e Anabeth escapassem pela porta dos fundos. Mas mexer com explosivos era extremamente perigoso, e um erro poderia custar a vida de ambas.</p>
+  
+<button class = "proximo" data-proximo = "7"> Tentar Encontrar uma Saida pelo Telhado</button>
+
+<button class = "proximo" data-proximo = "8"> Usar os explosivos que encontrou no armazem para criar uma distração </button>
+</div>
+
+
+<!-- BOTÃO ESCOLHA 6-->
+<div class="passo" id="passo-6">
+<img src="perdeu.png" alt="IMAGEM PERDEU">
+<p> Decidindo que uma abordagem furtiva era a melhor maneira de evitar um confronto direto e proteger Elisa, Mariana rapidamente imobilizou o capanga dentro da sala e começou a desamarrar a jovem. Seus movimentos eram rápidos, mas cuidadosos, tentando fazer o menor barulho possível. Anabeth estava visivelmente abalada, mas seguia as instruções de Mariana em silêncio, seus olhos cheios de esperança e medo.
+
+Mariana encontrou uma saída de emergência nos fundos do armazém, uma porta enferrujada que dava para um beco escuro e estreito. A detetive abriu a porta com cuidado, seus sentidos aguçados para qualquer sinal de perigo. A noite estava fria e silenciosa, com apenas o som distante do trânsito na cidade ao longe. Parecia que a fuga estava ao alcance.
+
+Conduzindo Anabeth pelo beco, Mariana sentia a tensão no ar. Estavam tão perto de escapar, de deixar para trás aquele lugar sinistro e finalmente salvar a jovem das garras da máfia. Mas a preocupação a consumia: os capangas de Vittorio, que ainda patrulhavam a área, poderiam estar a poucos passos delas.
+
+Enquanto se moviam silenciosamente pelo beco, Mariana ouviu um ruído atrás delas. Seu coração disparou, e ela fez sinal para Anabeth parar. Ao se virar, viu a sombra de um dos capangas, que havia notado o movimento delas. Em um instante, o capanga sacou sua arma e gritou por reforços.
+
+Sabendo que não havia tempo para uma troca de tiros, Mariana pegou a mão de Anabeth e começou a correr, tentando alcançar o carro que havia estacionado a alguns quarteirões de distância. Os gritos dos capangas ecoavam pelo beco enquanto eles se aproximavam cada vez mais.
+
+Elas corriam desesperadamente, mas o beco era uma armadilha. Estava repleto de obstáculos e becos sem saída. Mariana tentava encontrar uma rota de fuga, mas o labirinto de ruas estreitas não lhes dava muitas opções. A cada curva, os capangas se aproximavam mais, seus passos ecoando cada vez mais alto.
+
+Quando finalmente chegaram a um cruzamento, Mariana percebeu que estavam encurraladas. Os capangas bloquearam a única saída que restava. Eles avançaram com armas em punho, sem intenção de deixar que escapassem vivas.
+
+Em um último ato de desespero, Mariana se posicionou à frente de Anabeth, tentando proteger a jovem com seu próprio corpo. Ela ergueu sua arma, determinada a lutar até o fim, mas sabia que estava em desvantagem. Os capangas abriram fogo sem hesitação.
+
+Mariana sentiu a dor atravessá-la quando foi atingida por vários disparos. Anabeth gritou, mas não havia nada que pudesse fazer. Mariana caiu de joelhos, sua visão ficando turva enquanto o sangue escorria pelas mãos. Ela tentou se levantar, mas suas forças a abandonavam rapidamente.
+
+Os capangas se aproximaram, rindo e comentando sobre como a detetive tinha sido valente, mas tola. Eles arrancaram Anabeth de perto de Mariana, enquanto a jovem chorava e lutava em vão. O som dos passos se afastando e os soluços de Anabeth foram os últimos que Mariana ouviu antes de tudo se apagar.
+
+No dia seguinte, a cidade acordou com a notícia trágica: a detetive Mariana Zampierim havia sido encontrada morta em um beco na periferia, vítima de uma emboscada. Anabeth continuava desaparecida, e Vittorio De Luca ainda estava à solta, seu poder e influência mais fortes do que nunca.
+
+A missão que começou com esperança e coragem terminou em dor e perda. A memória de Mariana viveria, mas o peso de sua última decisão marcaria para sempre aqueles que a conheceram. O destino de Anabeth permanecia incerto, e a sombra da máfia continuava a assombrar a cidade.</p>
+  
+<button class="proximo" data-proximo="0"> Reiniciar? 🕹 </button>
+
+</div>
+
+  
+<!-- BOTÃO ESCOLHA 7-->
+<div class="passo" id="passo-7">
+<img src="ganhou.png" alt="IMAGEM GANHOU">
+<p> Decidida a encontrar uma saída segura, Mariana fez sinal para Anabeth e começou a escalar até o telhado do armazém. Apesar da tensão e do perigo iminente, Mariana sabia que o telhado poderia oferecer uma rota de fuga menos visível e, portanto, mais segura. Com a ajuda de uma escada improvisada e um pouco de esforço, ambas conseguiram alcançar o topo do edifício.
+
+O telhado era plano e havia algumas caixas e outros detritos espalhados, proporcionando uma cobertura parcial. Mariana olhou ao redor e avistou uma estrutura adjacente que parecia ser um prédio de escritórios desocupado. Parecia que poderia haver uma saída direta dali.
+
+"Vamos seguir por aqui," disse Mariana para Anabeth, que estava visivelmente aliviada por estar fora da linha de fogo. Elas avançaram com cautela, movendo-se rapidamente entre as caixas e utilizando qualquer cobertura disponível para se proteger.
+
+Enquanto se aproximavam da borda do telhado, Mariana viu uma área de acesso que levava para o prédio ao lado. Com um pouco de esforço, ela conseguiu abrir uma pequena janela que dava para um corredor deserto. Com Anabeth segura ao seu lado, elas entraram no prédio e rapidamente desceram as escadas.
+
+Quando chegaram ao térreo, Mariana usou sua experiência para verificar rapidamente se havia algum perigo imediato. Encontrou uma saída de emergência que levava a uma rua lateral, longe do tumulto e dos capangas. Com a respiração ofegante, mas aliviada, ela e Anabeth saíram do prédio e se dirigiram para um local seguro.
+
+Mariana entrou em contato com a polícia e forneceu informações cruciais sobre a localização dos capangas restantes e sobre a situação geral. As autoridades foram rapidamente mobilizadas para fazer uma busca completa pelo armazém e pela área ao redor. Graças ao resgate bem-sucedido e à habilidade de Mariana, a operação policial conseguiu prender os capangas e desmantelar a operação de Vittorio.
+
+Anabeth foi finalmente reunida com sua família, que a recebeu com lágrimas de alívio e gratidão. Mariana, embora exausta e com algumas feridas menores, sentiu um profundo senso de realização. O caso de Anabeth foi resolvido com sucesso, e Vittorio foi preso, encerrando seu reinado de terror na cidade.
+
+Com o sucesso de sua missão, Mariana Zampierim foi amplamente reconhecida por sua bravura e habilidade. Ela recebeu elogios de seus superiores e a gratidão da comunidade. Embora o trabalho de um detetive frequentemente envolva riscos e sacrifícios, este caso se destacou como um exemplo brilhante de como a determinação e a astúcia podem salvar vidas e trazer justiça.
+
+A história de Mariana se tornou uma inspiração para outros profissionais e uma lembrança de que, mesmo nas situações mais sombrias, a coragem e a estratégia podem iluminar o caminho para um final feliz. </p>
+  
+<button class="proximo" data-proximo="0"> Reiniciar? 🕹  </button>
+
+</div>
+  
+<!-- BOTÃO ESCOLHA 8-->
+<div class="passo" id="passo-8">
+<img src="logo.png" alt="LOGO NORMAL">
+<p> Mariana ao tentar explodir o armazém ela se perde de Anabeth, e após um tempo Mariana descobre que Anabeth foi levada a um clube noturno por um dos capangas de Vittorio.]
+  Decidindo que a melhor chance de encontrar Anabeth estava em obter informações diretas de Vittorio, Mariana Zampierim se preparou para se infiltrar no clube noturno de luxo. O "La Notte", como era chamado, era um dos estabelecimentos mais exclusivos da cidade, frequentado pela elite e pelos criminosos mais influentes. Mariana sabia que entrar ali exigiria mais do que apenas sua habilidade como detetive; ela precisaria de astúcia, disfarce e uma boa dose de coragem.
+
+Vestindo um elegante vestido preto e disfarçada com uma peruca loira, Mariana assumiu a identidade de uma socialite estrangeira, rica e poderosa. Com seu olhar atento, ela passou pela segurança do clube sem levantar suspeitas, aproveitando sua capacidade de se misturar sem ser notada. Ao entrar no salão principal, foi recebida por uma atmosfera de luxo decadente. Luzes suaves, música envolvente e sussurros conspiratórios preenchiam o ar.
+
+Mariana logo identificou Vittorio De Luca em uma mesa reservada, cercado por seus capangas e outras figuras suspeitas. Ele parecia despreocupado, rindo e brindando com seus companheiros, mas Mariana sabia que por trás daquela fachada havia um homem perigoso e calculista. Ela precisava agir com cautela.
+
+Observando o ambiente, Mariana identificou duas abordagens possíveis para obter as informações que precisava:
+
+Tentar seduzir Vittorio para ganhar sua confiança: Mariana poderia se aproximar diretamente de Vittorio, usando seu disfarce e charme para se infiltrar em seu círculo íntimo. Essa abordagem era arriscada, pois exigiria que ela ganhasse a confiança dele rapidamente, sem revelar sua verdadeira identidade. No entanto, se fosse bem-sucedida, poderia conseguir informações diretas sobre o paradeiro de Anabeth e possivelmente salvar a jovem antes que algo pior acontecesse.
+
+Interrogar discretamente um dos capangas: Outra opção seria focar nos capangas que acompanhavam Vittorio. Mariana poderia seguir um deles até uma área mais isolada do clube e usar sua habilidade de persuasão para extrair informações. Embora menos arriscado do que confrontar Vittorio diretamente, isso poderia atrasar o resgate de Anabeth, e qualquer erro poderia alertar a máfia sobre sua presença.</p>
+  
+<button class = "proximo" data-proximo = "3"> Tentar seduzir vittorio para ganhar a sua confiança </button>
+
+<button class = "proximo" data-proximo = "4"> interrogar discretamente um dos capangas </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 3-->
+<div class="passo" id="passo-3">
+<img src="logo.png">
+<p> Decidindo que a melhor forma de obter informações seria se aproximando diretamente de Vittorio, Mariana ajustou seu disfarce e se preparou para uma das tarefas mais arriscadas de sua carreira. Com uma mistura de confiança e charme, ela se dirigiu à mesa onde Vittorio estava cercado por seus capangas, rindo e brindando como se o mundo fosse seu.
+
+Mariana fez contato visual com Vittorio de longe, deixando que seu olhar lingerasse apenas o suficiente para captar sua atenção. Com um sorriso enigmático, ela caminhou lentamente em sua direção, cada passo medido e gracioso. A conversa na mesa diminuiu à medida que todos notaram a presença de Mariana, mas foi Vittorio quem reagiu primeiro, fascinado pela mulher misteriosa que se aproximava.
+
+"Boa noite, cavalheiros," disse Mariana, com uma voz baixa e sedutora, inclinando-se levemente sobre a mesa. "Espero não estar interrompendo, mas me disseram que este era o lugar para encontrar companhia interessante."
+
+Vittorio, intrigado e claramente impressionado, indicou uma cadeira ao seu lado. "Uma mulher como você nunca interrompe," respondeu ele, com um sorriso predatório. "Por favor, junte-se a nós."
+
+Mariana se acomodou ao lado de Vittorio, mantendo sua postura encantadora e seu disfarce impecável. Ao longo da noite, ela usou seu charme e inteligência para envolver Vittorio em uma conversa envolvente, desviando habilmente qualquer pergunta pessoal e focando em mantê-lo interessado e confortável. Ela sabia que estava caminhando em terreno perigoso, mas cada palavra e gesto eram calculados para ganhar a confiança do chefe da máfia.
+
+Enquanto a noite avançava e a bebida fluía, Vittorio começou a baixar a guarda. Mariana aproveitou uma oportunidade quando ele mencionou "negócios" para sondar informações sobre o paradeiro de Elisa. Fingindo desinteresse casual, ela perguntou sobre os rumores de "entregas" importantes que ouviu enquanto circulava pelo clube.
+
+Vittorio, atraído pela beleza e aparente lealdade de Mariana, começou a falar mais do que deveria. Ele insinuou que tinha uma "mercadoria valiosa" em seu poder, mas que ainda estava esperando o momento certo para "fechar o negócio". Mariana soube, então, que estava perto de descobrir a localização de Elisa.
+
+No entanto, antes que ela pudesse extrair mais detalhes, um dos capangas de Vittorio se aproximou e cochichou algo em seu ouvido. O chefe da máfia franziu a testa, sua expressão mudando rapidamente de descontraída para preocupada. Ele se levantou abruptamente, puxando Mariana junto com ele.
+
+"Venha comigo," disse Vittorio, em um tom que não permitia discussão. "Há algo que preciso mostrar a você."
+
+Mariana sabia que estava entrando em uma situação delicada. Ela tinha duas escolhas imediatas:
+
+Seguir Vittorio e tentar descobrir mais: Mariana poderia acompanhar Vittorio, arriscando-se a ser levada para um local mais privado onde a situação poderia se tornar perigosa. No entanto, essa escolha poderia lhe dar a oportunidade de descobrir a localização exata de Elisa e potencialmente salvar a jovem diretamente.
+
+Criar uma distração e escapar com as informações que já tinha: Mariana poderia tentar criar uma distração no clube e fugir com as informações que conseguiu até agora. Essa escolha garantiria sua segurança imediata, mas deixaria Elisa em risco, exigindo uma abordagem mais cuidadosa posteriormente. </p>
+  
+<button class="proximo" data-proximo="9"> seguir vittorio e tentar descobrir mais </button>
+  
+<button class="proximo" data-proximo="10"> criar uma distração e fugir com as informações que já tinha </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 4-->
+<div class="passo" id="passo-4">
+<img src="ganhou.png" alt="LOGO NORMAL">
+<p> Optando por uma abordagem mais cautelosa, Mariana decidiu interrogar discretamente um dos capangas de Vittorio. Observando atentamente, ela identificou um dos homens, um sujeito mais jovem que parecia menos experiente e mais vulnerável à persuasão. Ele se afastou do grupo principal, dirigindo-se ao bar para pegar bebidas.
+
+Mariana o seguiu com cuidado, mantendo sua postura elegante e confiante. Quando o capanga parou em uma área menos movimentada do clube, ela se aproximou, fingindo ser uma cliente curiosa e interessada em conversa. Com um sorriso encantador, ela iniciou uma conversa casual, usando seu disfarce para parecer uma socialite em busca de diversão e novidades.
+
+O capanga, surpreendido pela atenção de uma mulher tão atraente e aparentemente influente, relaxou e começou a conversar com Mariana. Eles trocaram algumas palavras sobre o clube, e logo ela encontrou uma oportunidade de sondar informações mais relevantes. Usando sua inteligência e charme, Mariana manipulou a conversa até que o capanga, em um momento de descuido, mencionou que "a garota" estava em um esconderijo fora da cidade, aguardando uma "entrega" para o comprador.
+
+Percebendo a importância dessa informação, Mariana usou uma distração para levar o capanga a uma sala mais isolada, onde, com uma mistura de habilidade verbal e intimidação, conseguiu extrair mais detalhes. O capanga, agora percebendo que estava falando com alguém muito mais perigoso do que pensava, revelou o local exato onde Elisa estava sendo mantida: uma casa segura em uma propriedade rural, a cerca de uma hora da cidade.
+
+Com a informação crucial em mãos, Mariana incapacitou o capanga rapidamente, garantindo que ele não pudesse alertar Vittorio ou os outros. Ela saiu do clube sem levantar suspeitas, aproveitando a distração e a música alta para se misturar com a multidão.
+
+Uma vez fora, Mariana contatou suas conexões na polícia, organizando uma operação de resgate urgente. Em questão de horas, a polícia, liderada por Mariana, cercou a propriedade rural. A operação foi rápida e precisa, com os oficiais conseguindo neutralizar os guardas e invadir a casa segura.
+
+Elisa foi encontrada, assustada, mas ilesa. Mariana a confortou, garantindo que estava segura agora. A jovem, aliviada, agradeceu emocionada à detetive por sua coragem e determinação.
+
+Com Elisa em segurança e os responsáveis presos, Mariana voltou à cidade como uma heroína. Seu nome, já conhecido por sua competência, agora se tornava sinônimo de bravura e justiça. O caso foi resolvido, e o império de Vittorio De Luca começou a ruir, com a prisão do chefe da máfia e de seus principais capangas.
+
+Graças à escolha de Mariana de agir com cautela e inteligência, ela não apenas salvou Elisa, mas também desmantelou uma perigosa organização criminosa. A jovem retornou à sua família, e o reino de terror que Vittorio havia estabelecido começou a desmoronar, trazendo paz e segurança à cidade.
+
+Mariana continuou sua carreira como detetive, sempre disposta a enfrentar os desafios mais difíceis, sabendo que, com astúcia e coragem, era possível vencer até mesmo os inimigos mais poderosos. Ela seguiu em frente, confiante de que, em qualquer situação, escolheria o caminho que traria justiça e um final feliz. </p>
+  
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 9-->
+<div class="passo" id="passo-9">
+<img src="ganhou.png" alt="IMAGEM GANHOU">
+<p> Decidindo que seguir Vittorio poderia ser sua melhor chance de salvar Elisa, Mariana manteve a compostura e acompanhou o chefe da máfia para fora do salão principal do clube. Eles atravessaram corredores luxuosos, com Vittorio guiando-a até uma escada que levava a um andar superior, mais isolado. Seu coração batia forte, mas Mariana sabia que precisava manter a calma e continuar no papel que havia assumido.
+
+Subiram até uma sala privada, decorada com opulência, mas com uma sensação de confinamento que aumentava a tensão. Assim que entraram, Vittorio fechou a porta atrás deles, seu olhar agora muito mais sério e penetrante.
+
+"Você me intriga," ele disse, caminhando lentamente em direção a uma mesa no centro da sala. "Há algo em você que não consigo decifrar. Quem é você realmente?"
+
+Mariana percebeu que estava em um momento crucial. Mantendo sua expressão tranquila, ela se aproximou de Vittorio, colocando a mão sobre a mesa para ganhar tempo. "Sou apenas alguém que aprecia homens poderosos," respondeu ela, com um tom de voz controlado, mas insinuante. "E você parece ser o mais poderoso de todos."
+
+Vittorio sorriu, mas ainda havia desconfiança em seus olhos. Antes que ele pudesse pressioná-la mais, Mariana aproveitou a oportunidade para desviar o assunto. "Você mencionou algo sobre uma mercadoria valiosa esta noite. Tenho um certo interesse em... oportunidades de negócios."
+
+O olhar de Vittorio endureceu por um momento, mas depois relaxou. Ele parecia considerar as palavras de Mariana, e então fez um gesto indicando que ela se aproximasse de uma janela com cortinas pesadas. "Vou lhe mostrar algo," disse ele, afastando uma das cortinas para revelar uma pequena janela que dava para um galpão nos fundos do clube.
+
+Lá embaixo, Mariana viu um grupo de homens armados guardando um carro preto. No banco traseiro, ela pôde distinguir uma figura amarrada e com uma mordaça: Elisa. O alívio e o medo passaram por ela ao mesmo tempo, mas ela sabia que não podia mostrar emoção.
+
+"Ela vale muito," Vittorio disse, observando a reação de Mariana. "Mas as pessoas que querem comprá-la estão ficando impacientes. Talvez eu tenha que... encerrar o negócio em breve."
+
+Mariana sabia que o tempo estava se esgotando. Precisava agir rápido. Usando a proximidade com Vittorio a seu favor, ela se aproximou ainda mais, fingindo interesse no que ele dizia, mas discretamente, com a mão livre, alcançou uma pequena faca que tinha escondida sob o vestido.
+
+Com um movimento rápido e preciso, Mariana pressionou a lâmina contra o pescoço de Vittorio, sua voz baixa e firme. "Agora você vai me dizer como saímos daqui sem que nenhum dos seus homens perceba."
+
+Vittorio, surpreso com a reviravolta, sentiu a lâmina fria contra sua pele e soube que ela estava falando sério. Ele a subestimou, e agora estava à mercê dela. "Muito bem," disse ele, com um sussurro tenso. "Há uma passagem pelos fundos. Se você me deixar sair daqui vivo, eu mesmo darei as ordens para liberar a garota."
+
+Mariana, ainda controlando a situação, aceitou o acordo. Ela sabia que precisava garantir a segurança de Elisa primeiro. Com Vittorio como refém, ela o forçou a conduzi-la até a saída pelos fundos do clube, onde ele deu a ordem para liberar Elisa, alegando que o negócio havia sido cancelado.
+
+Os capangas, confusos, mas obedientes, liberaram Elisa do carro. Mariana segurou Vittorio até que a garota estivesse em segurança em seus braços. Assim que Elisa foi resgatada, Mariana entregou Vittorio à polícia, que já havia sido alertada e aguardava do lado de fora do clube.
+
+Vittorio foi preso, seu império começou a desmoronar, e Elisa foi finalmente reunida com sua família, sã e salva. Mariana, exausta mas aliviada, recebeu o reconhecimento de todos por sua bravura e determinação.
+
+A história de sua astúcia e coragem se espalhou pela cidade, tornando-a uma lenda entre os detetives e um pesadelo para os criminosos. Com Elisa em segurança e a máfia desarticulada, Mariana conseguiu não apenas resolver o caso, mas também garantir que a justiça prevalecesse.
+
+Com a missão cumprida e um futuro promissor à frente, Mariana Zampierim saiu daquele caso como uma verdadeira heroína, lembrando sempre que, às vezes, o caminho mais perigoso é também o único que leva a um final feliz.</p>
+  
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+
+<!-- BOTÃO ESCOLHA 10-->
+<div class="passo" id="passo-10">
+<img src="perdeu.png" alt="IMAGEM PERDEU">
+<p> Decidindo que a situação estava ficando perigosa demais, Mariana optou por criar uma distração e escapar com as informações que havia conseguido até aquele momento. Sabia que não tinha o quadro completo, mas também estava ciente de que, se continuasse, poderia se colocar em um perigo maior e comprometer a missão. Usando toda a sua experiência como detetive, ela improvisou rapidamente.
+
+Enquanto caminhava ao lado de Vittorio, ela discretamente derrubou um pequeno frasco de perfume que carregava em sua bolsa. O líquido se espalhou pelo chão, e em poucos segundos, o aroma começou a se intensificar, ativando os alarmes de incêndio do clube. O som estridente ecoou pelo salão, e os convidados, confusos e temerosos, começaram a se agitar.
+
+No meio da confusão, Mariana aproveitou a oportunidade para se afastar de Vittorio. Ele estava distraído tentando entender o que estava acontecendo e controlar seus capangas. Sem olhar para trás, ela se misturou à multidão que se dirigia para a saída de emergência, deixando o clube antes que alguém pudesse perceber sua ausência.
+
+Do lado de fora, Mariana respirou fundo, aliviada por ter conseguido escapar. Com a informação que tinha, ela imediatamente entrou em contato com a polícia e forneceu os detalhes sobre a "mercadoria valiosa" que Vittorio mencionara. As autoridades começaram a investigar, mas a falta de informações mais precisas dificultou as ações imediatas.
+
+Nas horas que se seguiram, Mariana aguardou ansiosamente por notícias, sentindo um peso crescente em seu coração. Ela sabia que sua escolha havia deixado Elisa em perigo, mas acreditava que a polícia conseguiria agir a tempo. Infelizmente, não foi o que aconteceu.
+
+Na manhã seguinte, os jornais traziam notícias devastadoras: o corpo de Elisa foi encontrado em um armazém abandonado nos arredores da cidade. A jovem havia sido brutalmente assassinada pouco antes de uma operação policial tardia chegar ao local. A "entrega" de que Vittorio falara era, na verdade, a execução de Elisa, ordenada como um aviso para qualquer um que ousasse desafiar sua autoridade.
+
+Mariana foi tomada por uma profunda sensação de culpa. Sua decisão de recuar e priorizar sua segurança havia custado a vida de uma jovem inocente. A confiança que ela sempre teve em suas habilidades como detetive foi abalada, e a dor de perder Elisa a assombrou, sabendo que, se tivesse corrido o risco, talvez pudesse ter impedido a tragédia.
+
+Vittorio, por sua vez, desapareceu da cidade, levando com ele o medo e a incerteza. Mariana sabia que sua missão estava longe de terminar, mas a sombra de sua decisão pesava sobre ela. O caso de Elisa se tornou uma ferida aberta em sua alma, um lembrete doloroso de que, em sua linha de trabalho, nem todas as escolhas levam a um final feliz.
+
+A partir daquele dia, Mariana continuou sua carreira como detetive, mas a lembrança de Elisa nunca a deixou. Ela sabia que, às vezes, as decisões que tomamos em momentos críticos podem ter consequências irreversíveis, e que a busca pela justiça, embora nobre, é muitas vezes acompanhada por um fardo insuportável de tristeza e arrependimento. </p>
+  
+<button class = "proximo" data-proximo = "0"> Reiniciar? 🕹  </button>
+</div>
+  
+</main>
+  
+<!-- CRÉDITOS -->
+<footer>
+<p> Jogo produzido por Mariana Zampierim <a href="https://github.com/maah-zamp" target="_blank" class="nome-link"> Maah. </a> </p>
+</footer>
+  
+<script src="sketch.js"></script>
+  
+</body>
+
+</html>

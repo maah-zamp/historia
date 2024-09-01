@@ -1,0 +1,60 @@
+html, body {
+  font-family: "Indie Flower", cursive;
+  background-color: rgb(230,211,230);
+  color: rgb(255,255,255);
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  flex-direction: column;
+  background-image: url("fundo.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+button {
+  font-family: "Bebas Neue", sans-serif;
+  background-color: rgb(216,137,58);
+  border: solid 2px rgb(83,43,45);
+  border-radius: 200px;
+  font-size: 30px;
+  margin: 10px;
+  color: rgb(255,255,255);
+}
+
+.passo{
+  display: none;
+}
+
+.passo.ativo{
+  display: block;
+}
+
+main {
+  max-width: 90%;
+  text-align: center;
+  flex: 1;
+}
+
+img {
+  width: 700px;
+}
+
+footer {
+  color: rgb(255,255,255);
+  font-family: "Grey Qo", cursive;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.nome-link {
+  font-family: "Grey Qo", cursive;
+  color: rgb(179,152,152);
+  text-decoration: none;
+}
+
+.nome-link:hover {
+  text-decoration: underline;
+}
